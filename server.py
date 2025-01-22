@@ -5,10 +5,12 @@ class MyRequestHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
             self.path = '/index.html'
-        elif self.path == '/about':
-            self.path = '/about.html'
         elif self.path == '/jeux-videos/mario-odyssey':
-            self.path = '/jeux-videos/mario-odyssey.html'
+            self.path = '/jeux-videos/mario-odyssey/index.html'
+        elif self.path == '/jeux-videos/mario-odyssey':
+            self.path = '/jeux-videos/mario-odyssey/astuce.html'
+        elif self.path == '/jeux-videos/mario-odyssey/lunes':
+            self.path = '/jeux-videos/mario-odyssey/lunes/lunes.html'
         elif self.path == '/jeux-videos/zelda-botw':
             self.path = '/jeux-videos/zelda-botw.html'
         elif self.path == '/jeux-videos/zelda-totk':
