@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Plus Grande Page HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .title {
+            font-size: 2em;
+            color: #333;
+        }
+        .content {
+            font-size: 1.2em;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur la plus grande page HTML du monde</h1>
+</header>
+
+<div class="section">
+    <h2 class="title">Section 1</h2>
+    <p class="content">Ceci est un énorme exemple de contenu. Il y a plusieurs milliers de lignes similaires à celle-ci pour créer une page longue et impressionnante. Vous pouvez imaginer un site avec beaucoup de contenu dynamique, des images, des vidéos et bien plus encore.</p>
+</div>
+
+<div class="section">
+    <h2 class="title">Section 2</h2>
+    <p class="content">Ceci est un énorme exemple de contenu. Il y a plusieurs milliers de lignes similaires à celle-ci pour créer une page longue et impressionnante. Vous pouvez imaginer un site avec beaucoup de contenu dynamique, des images, des vidéos et bien plus encore.</p>
+</div>
+
+<div class="section">
+    <h2 class="title">Section 3</h2>
+    <p class="content">Ceci est un énorme exemple de contenu. Il y a plusieurs milliers de lignes similaires à celle-ci pour créer une page longue et impressionnante. Vous pouvez imaginer un site avec beaucoup de contenu dynamique, des images, des vidéos et bien plus encore.</p>
+</div>
+
+<!-- Répétition de nombreuses sections pour augmenter la longueur de la page -->
+<script>
+    const numberOfSections = 1000; // Augmente le nombre de sections pour une page gigantesque
+    const body = document.body;
+
+    for (let i = 4; i <= numberOfSections + 3; i++) {
+        const section = document.createElement('div');
+        section.classList.add('section');
+        
+        const title = document.createElement('h2');
+        title.classList.add('title');
+        title.textContent = `Section ${i}`;
+        
+        const content = document.createElement('p');
+        content.classList.add('content');
+        content.textContent = `Ceci est un énorme exemple de contenu. Il y a plusieurs milliers de lignes similaires à celle-ci pour créer une page longue et impressionnante. Vous pouvez imaginer un site avec beaucoup de contenu dynamique, des images, des vidéos et bien plus encore.`;
+        
+        section.appendChild(title);
+        section.appendChild(content);
+        body.appendChild(section);
+    }
+</script>
+
+<footer>
+    <p>&copy; 2025 MonSiteWeb. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
