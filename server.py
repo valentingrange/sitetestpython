@@ -11,12 +11,24 @@ class MyRequestHandler(SimpleHTTPRequestHandler):
             self.path = '/jeux-videos/mario-odyssey/astuce.html'
         elif self.path == '/jeux-videos/mario-odyssey/lunes':
             self.path = '/jeux-videos/mario-odyssey/lunes/lunes.html'
-        elif self.path == '/jeux-videos/zelda-botw':
-            self.path = '/jeux-videos/zelda-botw.html'
-        elif self.path == '/jeux-videos/zelda-totk':
-            self.path = '/jeux-videos/zelda-totk.html'
+        elif self.path == '/jeux-videos/zelda-breath-of-the-wild':
+            self.path = '/jeux-videos/zelda-breath-of-the-wild/index.html'
+        elif self.path == '/jeux-videos/zelda-breath-of-the-wild':
+            self.path = '/jeux-videos/zelda-breath-of-the-wild/astuce.html'
+        elif self.path == '/jeux-videos/zelda-breath-of-the-wild':
+            self.path = '/jeux-videos/zelda-breath-of-the-wild/solution.html'
+        elif self.path == '/jeux-videos/zelda-tears-of-the-kingdom':
+            self.path = '/jeux-videos/zelda-tears-of-the-kingdom/index.html'
+        elif self.path == '/jeux-videos/zelda-tears-of-the-kingdom':
+            self.path = '/jeux-videos/zelda-tears-of-the-kingdom/astuce.html'
+        elif self.path == '/jeux-videos/zelda-tears-of-the-kingdom':
+            self.path = '/jeux-videos/zelda-tears-of-the-kingdom/solution.html'
         elif self.path == '/jeux-videos/minecraft':
-            self.path = '/jeux-videos/minecraft.html'
+            self.path = '/jeux-videos/minecraft/index.html'
+        elif self.path == '/jeux-videos/minecraft':
+            self.path = '/jeux-videos/minecraft/astuce.html'
+        elif self.path == '/jeux-videos/minecraft':
+            self.path = '/jeux-videos/minecraft/solution.html'
 
         try:
             content = self.render_template(self.path[1:])
